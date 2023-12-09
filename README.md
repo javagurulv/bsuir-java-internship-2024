@@ -19,7 +19,7 @@
     * [ [Скачать](https://www.jetbrains.com/idea/download/) ]
 
 
-* **[JDK: Amazon Corretto version 18.0.2](https://adoptium.net/)** - Комплект разработчика приложений (**JDK** - **J**ava **D**evelopment **K**it) на **Java** необходимый для компиляции и запуска программ
+* **[JDK: 21](https://adoptium.net/)** - Комплект разработчика приложений (**JDK** - **J**ava **D**evelopment **K**it) на **Java** необходимый для компиляции и запуска программ
     * Рекомендуется установить используя **IDE**
     * [ [Скачать](https://adoptium.net/) ]
 
@@ -81,4 +81,4 @@ JSON, XML
 
 ---------------------
 
-![build](https://github.com/javagurulv/bsu_java_internship_2023/actions/workflows/build.yaml/badge.svg)
+![build](https://github.com/javagurulv/bsuir_java_internship_2024/actions/workflows/build.yaml/badge.svg)
