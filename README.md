@@ -81,4 +81,4 @@ JSON, XML
 
 ---------------------
 
-![build](https://github.com/javagurulv/bsuir_java_internship_2024/actions/workflows/build.yaml/badge.svg)
+![build](https://github.com/javagurulv/bsuir-java-internship-2024/actions/workflows/build.yaml/badge.svg)
