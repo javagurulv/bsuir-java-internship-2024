@@ -9,35 +9,25 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-import java.math.BigDecimal;
-import java.util.List;
-
 @Component
-public class TravelCalculatePremiumServiceImpl implements TravelCalculatePremiumService {
+class TravelCalculatePremiumServiceImpl implements TravelCalculatePremiumService {
 
-    private final TravelCalculatePremiumRequestValidator requestValidator;
-    private final DateTimeService dateTimeService;
-
-    @Autowired
-    public TravelCalculatePremiumServiceImpl(TravelCalculatePremiumRequestValidator requestValidator, DateTimeService dateTimeService) {
-        this.requestValidator = requestValidator;
-        this.dateTimeService = dateTimeService;
-    }
+    @Autowired private TravelCalculatePremiumRequestValidator requestValidator;
+    @Autowired private DateTimeService dateTimeService;
 
     @Override
     public TravelCalculatePremiumResponse calculatePremium(TravelCalculatePremiumRequest request) {
         List<ValidationError> errors = requestValidator.validate(request);
-        return buildResponse(request, errors);
+        return errors.isEmpty()
+                ? buildResponse(request)
+                : buildResponse(errors);
     }
 
-    private TravelCalculatePremiumResponse buildResponse(TravelCalculatePremiumRequest request, List<ValidationError> errors) {
-        if (!errors.isEmpty()) {
-            return new TravelCalculatePremiumResponse(errors);
-        }
+    private TravelCalculatePremiumResponse buildResponse(List<ValidationError> errors) {
+        return new TravelCalculatePremiumResponse(errors);
+    }
 
+    private TravelCalculatePremiumResponse buildResponse(TravelCalculatePremiumRequest request) {
         TravelCalculatePremiumResponse response = new TravelCalculatePremiumResponse();
         response.setPersonFirstName(request.getPersonFirstName());
         response.setPersonLastName(request.getPersonLastName());
@@ -49,5 +39,5 @@ public class TravelCalculatePremiumServiceImpl implements TravelCalculatePremium
 
         return response;
     }
-}
 
+}

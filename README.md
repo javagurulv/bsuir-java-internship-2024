@@ -16,16 +16,16 @@
 #### Инструментарий
 
 * **[IDE: Intellij IDEA - Community Edition](https://www.jetbrains.com/idea/)** - Популярная интегрированная среда разработки (**IDE** - **I**ntegrated **D**evelopment **E**nvironment) для создания **Java** программ
-    * [ [Скачать](https://www.jetbrains.com/idea/download/) ]
+  * [ [Скачать](https://www.jetbrains.com/idea/download/) ]
 
 
-* **[JDK: 21](https://adoptium.net/)** - Комплект разработчика приложений (**JDK** - **J**ava **D**evelopment **K**it) на **Java** необходимый для компиляции и запуска программ
-    * Рекомендуется установить используя **IDE**
-    * [ [Скачать](https://adoptium.net/) ]
+* **[JDK: Amazon Corretto version 18.0.2](https://adoptium.net/)** - Комплект разработчика приложений (**JDK** - **J**ava **D**evelopment **K**it) на **Java** необходимый для компиляции и запуска программ
+  * Рекомендуется установить используя **IDE**
+  * [ [Скачать](https://adoptium.net/) ]
 
 
 * **[Git](https://git-scm.com/)** - Распределенная система управления версиями исходного кода программ
-    * [ [Скачать](https://git-scm.com/download) ]
+  * [ [Скачать](https://git-scm.com/download) ]
 
 ---
 
@@ -81,4 +81,4 @@ JSON, XML
 
 ---------------------
 
-![build](https://github.com/javagurulv/bsuir-java-internship-2024/actions/workflows/build.yaml/badge.svg)
+![build](https://github.com/javagurulv/bsu_java_internship_2023/actions/workflows/build.yaml/badge.svg)
