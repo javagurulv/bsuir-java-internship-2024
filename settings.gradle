@@ -1,6 +1,7 @@
 include 'student_lastname_firstname'
 
 
+include 'teacher:travel_insurance_calculator:step_0'
 include 'teacher:travel_insurance_calculator:step_1'
 include 'teacher:travel_insurance_calculator:step_2'
 include 'teacher:travel_insurance_calculator:step_3'
